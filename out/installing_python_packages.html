@@ -134,7 +134,11 @@
                   <li class="nav-section">
                     <div class="nav-section-header"><a href="javascript:void(0)">Database and Persistence</a><i class="icon-chevron-down tocNavArrow"></i><i class="icon-chevron-up tocNavArrow"></i></div>
                     <ul>
-                      <li class="nav-submenu-item"><a href="setting_up_mysql.html">Using MySQL</a></li>
+                      <li class="nav-submenu-item"><a href="setting_up_mysql.html">Using MySQL</a>
+                        <ul>
+                          <li class="nav-submenu-item"><a href="setting_up_phpmyadmin.html">Using PHPMyAdmin</a></li>
+                        </ul>
+                      </li>
                       <li class="nav-submenu-item"><a href="setting_up_mongodb.html">Using MongoDB</a></li>
                       <li class="nav-submenu-item"><a href="setting_up_postgresql.html">Using PostgreSQL</a></li>
                       <li class="nav-submenu-item"><a href="setting_up_redis.html">Using Redis</a></li>
@@ -188,7 +192,7 @@
               <h1>Installing Python Packages</h1>
               <div><p>Cloud9 supports the installation of Python packages for applications that need to go beyond the standard library set. Every workspace has version 0.6.10 of Python&#39;s <code>easy_install</code> package manager. For more information on this module, see <a href="http://peak.telecommunity.com/DevCenter/EasyInstall">the official <code>easy_install</code> documentation</a>.</p>
 <p>Let&#39;s try installing a package. First, type the following in the console:</p>
-<pre><code class="language-bash">easy_install markdown</code></pre>
+<pre><code class="language-bash">sudo easy_install markdown</code></pre>
 <p>This installs <a href="http://pypi.python.org/pypi/Markdown/">the <code>markdown</code> Python package</a> to your workspace. You won&#39;t see the package installed in the directory tree, because it&#39;s kept deep within your project&#39;s the Python libs. </p>
 <p>Next, create a new Python script, and add these lines of code:</p>
 <pre><code class="language-python"><span class="keyword">import</span> markdown
